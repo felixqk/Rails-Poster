@@ -4,15 +4,17 @@
 	<title>High-Quality Kinect Depth Filtering for Real-Time 3D Telepresence</title> 
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet" type="text/css">
   <style>
 
   body {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+
   }
 
-  img {
+#resultimage {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -22,11 +24,11 @@
 
 </head> 
 
-<body> 
-  <h1>High-Quality Kinect Depth Filtering for Real-Time 3D Telepresence</h1>
-  <br/>
+<body > 
+  <h2 align="center">High-Quality Kinect Depth Filtering for Real-Time 3D Telepresence</h2>
 
-  <b>Mengyao Zhao, Fuwen Tan, Chi-Wing Fu, Chi-Keung Tang, Jianfei Cai, Tat Jen Cham</b>
+
+  <div align="center"><b> <i>Mengyao Zhao, Fuwen Tan, Chi-Wing Fu, Chi-Keung Tang, Jianfei Cai, Tat Jen Cham </i> </b> </div>
   <br/>
   <br/>
   <b>Abstract</b>
@@ -42,13 +44,24 @@
 <li> Existing data filtering methods on Kinect depth data mainly address uniformly-distributed random noise, but ignore depth quantization problem in the data; </li>
 <li> In 3D telepresence applications, e.g., tele-conferencing, the hardware depth sensors have to be  mounted on a fixed  location  in the physical space, rather than being freely movable as in KinectFusion;</li>
 <li> The filtering process should  run  in  real-time,  so  we cannot afford tedious computation with global data optimization, e.g., solving with Poisson equations. Considering above requirements, we propose a multi-scale direction-aware filtering method, aiming at making use of Kinect in 3D telepresence applications. Our method not only can effectively filter Kinect depth data, in particular  to resolve the depth quantization issue, but also can run in real-time by using GPUs. </li>
-  <br>
- <b>Evaluation & Results</b>
-<p><img src="/images/kinectfiltering-results.png" width="500" /> <p>
-  <br>
- <b>Downloads</b>
-<p><a href="/pdf/kinectfiltering-poster.pdf"> Poster </a> </p>
-<a href="/pdf/kinectfiltering-paper.pdf"> Paper</a>
+
+<br>
+<br>
+
+ <div style="float: left"> 
+   <b>Evaluation & Results</b>
+  <p><img id="resultimage" src="/images/kinectfiltering-results.png" width="300" /> <p>
+</div>
+
+ <div> 
+   <b>Downloads</b>
+   <br>
+     <br>
+  <div > <img src="/images/minipdf.png" style="vertical-align: middle;" /> <a href="/pdf/kinectfiltering-poster.pdf" > Poster PDF</a> 
+        <br>
+  <img src="/images/minipdf.png" style="vertical-align: middle;margin-top:5px" /> <a href="/pdf/kinectfiltering-paper.pdf"> Paper</a></div>
+ </div> 
+
  
 </body>
 </html>
